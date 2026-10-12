@@ -1,27 +1,56 @@
 Package: muiTreeView
 Type: Package
 Title: 'MUI X Tree View' for 'shiny' Apps and 'Quarto'
-Version: 0.1.1
-Authors@R: c(
-  person(
-    given = "Felix", 
-    family = "Luginbuhl", 
-    role = c("aut", "cre"), 
-    email = "felix.luginbuhl@protonmail.ch"))
-Maintainer: Felix Luginbuhl <felix.luginbuhl@protonmail.ch>
+Version: 0.2.0
+Authors@R: 
+    c(person(given = "Felix", family = "Luginbuhl", role = c("aut", "cre", "cph"),
+             email = "felix.luginbuhl@protonmail.ch",
+             comment = c(ORCID = "0009-0008-6625-2899")),
+      person(family = "MUI", role = "cph",
+             comment = "Copyright holder of the bundled '@mui/x-tree-view', '@mui/x-internals', '@base-ui/utils' and '@mui/system' (subpath imports) JavaScript libraries; see LICENSE.note"),
+      person(family = "Meta Platforms, Inc. and affiliates", role = "cph",
+             comment = "Copyright holder of the bundled 'react-is', 'prop-types' and 'use-sync-external-store' JavaScript libraries; 'react' and 'react-dom' are declared as peer dependencies and provided at runtime by 'shiny.react'"),
+      person(family = "React Community", role = "cph",
+             comment = "Copyright holder of the bundled 'react-transition-group' JavaScript library; see LICENSE.note"),
+      person(given = "Luke", family = "Edwards", role = "cph",
+             comment = "Copyright holder of the bundled 'clsx' JavaScript library; see LICENSE.note"),
+      person(family = "Reselect contributors", role = "cph",
+             comment = "Copyright holder of the bundled 'reselect' JavaScript library; see LICENSE.note"))
 Description: 
-  Give access to 'MUI X Tree View' components, which lets users navigate hierarchical 
-  lists of data with nested levels that can be expanded and collapsed.
+  Wraps the 'MUI X Tree View' React components <https://mui.com/x/react-tree-view/>
+  for use in 'shiny' applications and 'quarto' documents, letting users navigate
+  hierarchical data with nested levels that can be expanded and collapsed. Bundles
+  the MIT-licensed community edition of the '@mui/x-tree-view' JavaScript library
+  (the commercial 'Pro' tier is not included).
 License: MIT + file LICENSE
 Encoding: UTF-8
-Imports: htmltools, shiny.react (>= 0.4.0)
+Language: en-US
+Depends: R (>= 4.1)
+Imports: muiMaterial (>= 0.2.1), htmltools, shiny.react (>= 0.4.0),
+        utils
 Suggests: shiny, testthat (>= 3.0.0)
 RoxygenNote: 7.3.3
-URL: https://felixluginbuhl.com/muiTreeView/
+URL: https://felixluginbuhl.com/muiTreeView/,
+        https://github.com/lgnbhl/muiTreeView
 BugReports: https://github.com/lgnbhl/muiTreeView/issues
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2026-01-21 14:19:20 UTC; felix
-Author: Felix Luginbuhl [aut, cre]
+Packaged: 2026-10-12 16:14:39 UTC; felix
+Author: Felix Luginbuhl [aut, cre, cph] (ORCID:
+    <https://orcid.org/0009-0008-6625-2899>),
+  MUI [cph] (Copyright holder of the bundled '@mui/x-tree-view',
+    '@mui/x-internals', '@base-ui/utils' and '@mui/system' (subpath
+    imports) JavaScript libraries; see LICENSE.note),
+  Meta Platforms, Inc. and affiliates [cph] (Copyright holder of the
+    bundled 'react-is', 'prop-types' and 'use-sync-external-store'
+    JavaScript libraries; 'react' and 'react-dom' are declared as peer
+    dependencies and provided at runtime by 'shiny.react'),
+  React Community [cph] (Copyright holder of the bundled
+    'react-transition-group' JavaScript library; see LICENSE.note),
+  Luke Edwards [cph] (Copyright holder of the bundled 'clsx' JavaScript
+    library; see LICENSE.note),
+  Reselect contributors [cph] (Copyright holder of the bundled 'reselect'
+    JavaScript library; see LICENSE.note)
+Maintainer: Felix Luginbuhl <felix.luginbuhl@protonmail.ch>
 Repository: CRAN
-Date/Publication: 2026-01-26 16:30:02 UTC
+Date/Publication: 2026-10-12 16:40:02 UTC
